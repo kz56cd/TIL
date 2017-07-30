@@ -34,3 +34,13 @@ enum BallType {
 ```
 
 ## [WIP] ref
+
+
+----
+
+## etc
+
+- `==` などで比較したいとき
+	- Equatableに準拠させる：
+	- http://blog.ishkawa.org/2016/09/25/1474824960/
+	
