@@ -83,3 +83,7 @@ extension LocationService: CLLocationManagerDelegate {
 - http://adragoona.hatenablog.com/entry/2014/05/12/215836
 - https://gist.github.com/nantekkotai/2841743
 
+（issueごとにブランチ分けてる意味が曖昧になりませんか）
+
+
+A(warning直したブランチ) -> B
