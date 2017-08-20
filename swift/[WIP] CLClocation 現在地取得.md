@@ -1,4 +1,4 @@
-# [WIP] CLClocation 現在地取得
+# [WIP] CLlocation 現在地取得
 
 ## overview
 
