@@ -60,18 +60,12 @@ extension LocationService: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .notDetermined:
-            stopUpdatingLocation()
-        case .denied:
-            stopUpdatingLocation()
-        case .restricted:
-            stopUpdatingLocation()
-        case .authorizedAlways:
-            startUpdatingLocation()
-        case .authorizedWhenInUse:
-            startUpdatingLocation()
+        guard status == .authorizedWhenInUse
+            || status == .authorizedAlways else {
+                stopUpdatingLocation()
+                return
         }
+        startUpdatingLocation()
     }
 }
 ```
@@ -82,8 +76,3 @@ extension LocationService: CLLocationManagerDelegate {
 
 - http://adragoona.hatenablog.com/entry/2014/05/12/215836
 - https://gist.github.com/nantekkotai/2841743
-
-（issueごとにブランチ分けてる意味が曖昧になりませんか）
-
-
-A(warning直したブランチ) -> B

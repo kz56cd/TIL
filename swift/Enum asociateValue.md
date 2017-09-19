@@ -1,4 +1,4 @@
-# [WIP] Enum asociateValue
+# Enum asociateValue
 
 ## overview
 
@@ -20,6 +20,8 @@
 
 ## [WIP] usage
 
+宣言：
+
 ```
 enum Sports {
     case running
@@ -33,8 +35,26 @@ enum BallType {
 }
 ```
 
-## [WIP] ref
+使用例、switchで評価する時はletなどで変数化する必要がある：
 
+```
+let myFaboriteSports = .tennis(ballType: .hard)
+
+switch myFaboriteSports {
+case .running:
+    // do something
+    break
+case tennis(let ballType):
+    break
+case basketBall(let playerNum, let ballType):
+    break
+}
+
+```
+
+## ref
+
+- http://qiita.com/gologo13/items/0d484da7d4c9beb9e0b1#associated-value
 
 ----
 

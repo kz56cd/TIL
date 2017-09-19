@@ -2,6 +2,7 @@
 
 ## overview
 
+- dispatchやsleep()などを使用すればよい
 
 ## usage
 

@@ -1,4 +1,4 @@
-# [WIP] protocolをweakで使うには
+# protocolをweakで使うには
 
 ## overview
 
@@ -11,6 +11,8 @@
 - http://qiita.com/yimajo/items/892bd2fe1ccb808ffe49
 
 ## usage
+
+`protocol Fuga: class { }` という形で宣言すればよい  
 
 ```
 protocol Hoge {
@@ -26,8 +28,3 @@ class FooClass {
     weak var fugaVar: Fuga? // OK
 }
 ```
-
-
-## etc
-
-- stub
