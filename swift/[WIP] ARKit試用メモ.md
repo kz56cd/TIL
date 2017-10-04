@@ -23,3 +23,6 @@ https://qiita.com/noby111/items/dd883e9097fd6ce22893
 - 返り値[ARHitTestResult] が空の時
 	- > 結果は、ジャイロの初期化などが、完了していないと、取得に失敗することがありますので、isEmptyで取得できているかどうかを確認しています。
 	- http://dev.classmethod.jp/smartphone/ios-11arkit-measure/
+
+						
+

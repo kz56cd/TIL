@@ -26,9 +26,34 @@ https://ohako-inc.slack.com/archives/C4AGFPJMU/p1506044695000134
 	- [WIP]NSBundleではまる
 - playgroundが動かない（同じくnot load Nib）
 
+### playground
+
+
+- 追加方法
+	- xcode9で変わった
+		- 普通にnew -> playground作成（workspaceと同階層に置く）
+		- xcodeの左ペインにドラッグ
+		- frameworkをビルド
+- 画像を追加する
+	- https://www.natashatherobot.com/xcode-6-add-image-assets-to-playground/
+
+
+- delegateとか
+	- 内部にclass書く
+	- https://gist.github.com/watert/13c38d269ea15aa8360f
 
 -------
 
 
 
 - https://ja.stackoverflow.com/questions/18772/%E8%87%AA%E4%BD%9C%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%92import%E3%81%99%E3%82%8B%E3%81%A8-no-such-module-%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B
+
+
+--------
+
+
+
+
+		
+		
+		
