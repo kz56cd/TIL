@@ -59,15 +59,7 @@ ndeftool.py make smartposter -t PlalaPinky https://www.youtube.com/watch?v=M5eDe
 ## protocol等
 
 - NFCReaderSessionProtocol
-  
-  
-  
+
 python ndeftool.py make smartposter https://www.youtube.com/watch?v=M5eDef_aBlM
-
-
-メゾン大平公園、〒330-0856 埼玉県さいたま市大宮区三橋１丁目５２−１
-
-
-
 	
 	

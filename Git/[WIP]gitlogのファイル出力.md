@@ -6,8 +6,3 @@ git log --oneline --branches --reverse --date=iso --since="10year" --pretty=form
 ## ref
 
 - http://chaika.hatenablog.com/entry/2017/07/03/113000
-
-
-
-
-

@@ -2,10 +2,13 @@
 
 ## overview
 
-- iOS10以降
-	- セルの読み込みが安定する
-	- https://speakerdeck.com/toyship/ios10shi-dai-falsecollectionviewzui-xin-tukaikonasi
+### Pre-Fetching API とは
 
+- iOS10で用意された
+	- セルの事前読込
+		- prefetch時に、画像キャッシュや通信など、処理のやや重いものを扱うことで、スクロールなどの安定化が期待できる
+		- https://speakerdeck.com/toyship/ios10shi-dai-falsecollectionviewzui-xin-tukaikonasi
+		
 ## usage
 
 - prefetchのタイミング( = prefetchItemsAt)で、画像キャッシュのみ行う
@@ -16,7 +19,7 @@
 
 ### prefetchItemsAt
 
-```
+```swift:
 func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
     preheater.startPreheating(
         with: makeCacheRequests(indexPaths: indexPaths)
@@ -24,15 +27,16 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 }
     
 private func makeCacheRequests(indexPaths: [IndexPath]) -> [Request] {
-    return indexPaths.map { Request(url: viewModel.cellModels[$0.row].url) }
+    return indexPaths.map { 
+    	Request(url: viewModel.cellModels[$0.row].url) 
+    }
 }
 
 
-```
 
 ### cancelPrefetchingForItemsAt
 
-```
+```swift:
 func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
     preheater.stopPreheating(
         with: makeCacheRequests(indexPaths: indexPaths)
@@ -40,6 +44,11 @@ func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItem
 }
 ```
 
+## etc
+
+上記はUICollectionViewの例となるが、UITableView
+	- UITableViewDataSourcePrefetching
+	- https://developer.apple.com/documentation/uikit/uitableviewdatasourceprefetching
 
 ## ref
 
