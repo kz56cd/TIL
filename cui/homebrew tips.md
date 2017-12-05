@@ -36,3 +36,9 @@ $ brew install app_name
 
 ref:
 https://qiita.com/masawada/items/484bbf83ef39cad7af74
+
+### brew tap
+
+- > brew tap adds more repositories to the list of formulae that brew tracks, updates, and installs from. By default, tap assumes that the repositories come from GitHub, but the command isn't limited to any one location. 
+	- https://github.com/Homebrew/brew/blob/master/docs/Taps.md
+-  https://qiita.com/saa/items/85ed5e914d424fbf9fd6

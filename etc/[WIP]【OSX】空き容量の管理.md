@@ -27,4 +27,4 @@ $ sudo rm /private/var/vm/sleepimage
 ## etc
 
 - ディスクの占有データを可視化
-	- 
+	- http://www.derlien.com/
